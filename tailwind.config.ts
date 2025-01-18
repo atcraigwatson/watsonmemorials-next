@@ -12,6 +12,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        "home-hero": "url('/home-page-jumbotron-bg.jpg')",
+      },
     },
   },
   plugins: [],
