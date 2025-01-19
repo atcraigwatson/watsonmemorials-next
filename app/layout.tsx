@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 // import "./globals.css";
 import "../styles/globals.scss";
 
-import SiteNav from "@/components/siteNavbar/SiteNavbar";
+import SiteNav from "@/components/site-navbar/SiteNavbar";
 import BootstrapClient from "@/components/BootstrapClient";
 
 export const metadata: Metadata = {
