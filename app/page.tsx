@@ -1,53 +1,26 @@
+import HomeCalloutSection from "@/components/home-page/HomeCalloutSection";
+import HomeJumbotron from "@/components/home-page/HomeJumbotron";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      <div className="jumbotron jumbotron-fluid home-jumbotron text-center pt-0 pb-5">
-        <div className="container py-5">
-          <Image
-            className="img-fluid mt-5"
-            src={"./watson-memorials-logo-white.svg"}
-            alt={"Watson Memorials Logo"}
-            width={400}
-            height={400}
-            layout=""
-          />
-          <h1 className="visually-hidden">
-            Watson Memorials - Headstone, Memorials and Gravestones in Darlington and the
-            Surrounding Areas
-          </h1>
-          <p className="lead text-white mt-5 mb-0">
-            Watson Memorials is a Darlington based Memorial Masons creating Headstones, Memorials &
-            Gravestones across the North East of England.
-          </p>
-          <a className="btn btn-lg btn-outline-secondary mt-5" href="contact.html">
-            Contact Us<span className="icon-angle-right ms-2"></span>
-          </a>
-        </div>
-      </div>
+      <HomeJumbotron
+        title={
+          "Watson Memorials is a Darlington based Memorial Masons creating Headstones, Memorials & Gravestones across the North East of England."
+        }
+      />
 
-      <section className="home-section mt-md-5 pt-md-5" id="details-are-important">
-        <div className="container">
-          <div className="row justify-content-center align-items-center flex-column">
-            <div className="col-12 home-section-content">
-              <h2 className="display-5 text-center text-white font-italic mb-3">
-                Every Detail Is Important
-              </h2>
-              <p className="lead text-center text-white font-weight-light">
-                Each service we provide and at each stage in the process -{" "}
-                <strong>Every Detail Is Important</strong>
-              </p>
-              <p className="text-center mb-0">
-                <a href="/contact.html" className="btn btn-lg btn-outline-primary">
-                  Contact Us
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomeCalloutSection
+        id={"details-are-important"}
+        title={"Every Detail Is Important"}
+        subtitle={
+          "Each service we provide and at each stage in the process - Every Detail Is Important"
+        }
+        linkText={"Contact Us"}
+        linkPath={"/contact"}
+      />
 
       <section className="home-section mt-md-5 pt-md-5" id="lawnMemorials">
         <div className="container">
@@ -191,28 +164,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-section mt-md-5 pt-md-5" id="additional-inscriptions">
-        <div className="container">
-          <div className="row justify-content-center align-items-center flex-column">
-            <div className="col-12 home-section-content">
-              <h2 className="display-5 text-center text-white font-italic mb-3">
-                Add Wording To A Headstone
-              </h2>
-              <p className="lead text-center text-white font-weight-light">
-                For further information on adding wording to a headstone please read on...
-              </p>
-              <p className="text-center mb-0">
-                <a
-                  href="/services/order-additional-inscription.html"
-                  className="btn btn-lg btn-outline-primary"
-                >
-                  Add Wording To A Headstone
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomeCalloutSection
+        id={"additional-inscriptions"}
+        title={"Add Wording To A Headstone"}
+        subtitle={"For further information on adding wording to a headstone please read on..."}
+        linkText={"Add Wording To A Headstone"}
+        linkPath={"/contact"}
+      />
 
       <section className="home-section mt-md-5 pt-md-5" id="vaseMemorials">
         <div className="container">
@@ -279,24 +237,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="home-section mt-md-5 pt-md-5" id="custom-designs">
-        <div className="container">
-          <div className="row justify-content-center align-items-center flex-column">
-            <div className="col-12 home-section-content">
-              <h2 className="display-5 text-center text-white font-italic mb-3">Bespoke Designs</h2>
-              <p className="lead text-center text-white font-weight-light">
-                We can create bespoke designs for all sizes of memorials, please feel free to
-                contact us with your ideas and we can help you create a lasting memorial.
-              </p>
-              <p className="text-center mb-0">
-                <a href="/contact.html" className="btn btn-lg btn-outline-primary">
-                  Contact Us
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HomeCalloutSection
+        id={"custom-designs"}
+        title={"Bespoke Designs"}
+        subtitle={
+          "We can create bespoke designs for all sizes of memorials, please feel free to contact us with your ideas and we can help you create a lasting memorial."
+        }
+        linkText={"Contact Us"}
+        linkPath={"/contact"}
+      />
 
       <section className="home-section mt-5 pt-5" id="restorationServices">
         <div className="container">
@@ -394,7 +343,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
     </main>
   );
 }
