@@ -1,0 +1,61 @@
+// Colours
+// -------------------------------------------------------------- //
+
+// Base
+$white: #fff;
+$black: #292b2c;
+$grey: #f7f7f7;
+
+// Slate
+$slate-darkest: #374355;
+$slate-darker: #3d4d65;
+$slate-dark: #53657d;
+$slate-base: #8393a7;
+$slate-light: #adb9c9;
+$slate-lighter: #c9d3df;
+$slate-lightest: #ebeff3;
+
+// Green
+$green-dark: darken(#47b279, 2%);
+$green-base: #47b279;
+$green-light: lighten(#47b279, 2%);
+
+// Orange
+$orange-dark: darken(#e5995b, 2%);
+$orange-base: #e5995b;
+$orange-light: lighten(#e5995b, 2%);
+
+// Red
+$red-dark: darken(#cc3d60, 2%);
+$red-base: #c23356;
+$red-light: lighten(#cc3d60, 2%);
+
+// Box Shadow
+// -------------------------------------------------------------- //
+$home-page-box-shadow: 0 0 20px rgba($slate-darkest, 0.2);
+
+// Fonts
+// -------------------------------------------------------------- //
+$heading-font-family: TimesNewRoman, "Times New Roman", Times, serif;
+$heading-font-weight: bold;
+$body-font-family: "Open Sans", sans-serif;
+
+// Breakpoints
+// -------------------------------------------------------------- //
+$breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+// Images
+// -------------------------------------------------------------- //
+$logo-icon: "../public/watson-memorials-logo-icon.svg";
+$home-jumbotron-bg: "../public/home-page-jumbotron-bg.jpg";

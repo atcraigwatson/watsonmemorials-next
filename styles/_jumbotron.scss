@@ -1,0 +1,101 @@
+// Jumbotron
+//
+// All modifications to the jumbotron element are made here.
+// -------------------------------------------------------------- //
+.home-jumbotron {
+  background: url($home-jumbotron-bg) no-repeat center left;
+  background-size: cover;
+  background-position-x: center;
+  margin-bottom: 0;
+
+  .lead {
+    font-size: 1.2rem;
+    font-family: "Times New Roman", Times, sans-serif;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 6px transparentize($slate-darkest, 0.4);
+
+    @include breakpoint(md) {
+      font-size: 1.8rem;
+    }
+  }
+
+  #jumbotron-call-now {
+    color: $white;
+    background-color: $red-base;
+    &:hover,
+    &:focus {
+      background-color: $red-dark;
+    }
+  }
+
+  #jumbotron-call-now {
+    border-radius: 0 !important;
+  }
+}
+
+.page-jumbotron,
+.new-memorials-jumbotron {
+  padding: 2rem 0;
+  margin-bottom: 0;
+
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+
+  @include breakpoint(md) {
+    padding: 7.5rem 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+
+    @include breakpoint(md) {
+      font-size: 4rem;
+    }
+  }
+
+  p.lead {
+    font-size: 1.5rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.new-memorials-jumbotron {
+  margin-top: 56px;
+}
+
+#jumbotron-lawn-memorials {
+  // background-image: url("./img/lawn-memorial-page-jumbotron-bg.jpg");
+}
+
+#jumbotron-churchyard-memorials {
+  // background-image: url("./img/churchyard-memorial-page-jumbotron-bg.jpg");
+}
+
+#jumbotron-childrens-memorials {
+  // background-image: url("./img/childrens-memorial-page-jumbotron-bg.jpg");
+}
+
+#jumbotron-kerb-memorials,
+#jumbotron-additional-inscriptions {
+  // background-image: url("./img/kerb-memorial-page-jumbotron-bg.jpg");
+}
+
+#jumbotron-vase-memorials {
+  // background-image: url("./img/vase-memorial-page-jumbotron-bg.jpg");
+}
+
+#jumbotron-tablet-memorials {
+  // background-image: url("./img/tablet-memorial-page-jumbotron-bg.jpg");
+}
+
+#jumbotron-headstone-inscriptions {
+  // background-image: url("./img/inscription-page-jumbotron-bg.jpg");
+}
+
+#jumbotron-photo-plaques {
+  // background-image: url("./img/photo-plaques-page-jumbotron-bg.jpg");
+  background-position: center center;
+}

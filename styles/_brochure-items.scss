@@ -1,0 +1,52 @@
+
+.gallery-item,
+.brochure-item {
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item .card-img-top {
+  border-radius: 0;
+}
+
+.brochure-item .card-img-top {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  align-self: center;
+  border-radius: 0;
+}
+
+.brochure-item .card-img-top-full-width {
+  max-width: 100%;
+}
+
+.brochure-item .card-text a {
+  color: $red-base;
+  &:hover,
+  &:focus {
+    color: $red-base;
+  }
+}
+
+.brochure-item .btn-secondary {
+  background-color: #ffffff !important;
+}
+
+.brochure-item .table-brochure-item {
+  th,
+  td {
+    color: $slate-darker;
+  }
+}
+
+.brochure-item .table-brochure-item caption {
+  color: $slate-darkest !important;
+  font-size: 20px;
+}
+
+.brochure-item .card-img-top.gallery-img {
+  max-width: 100%;
+  height: auto;
+}
